@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="../node_modules/web3/dist/web3.min.js"></script>
+</head>
+<body>
+<div class="card">
+    <div class="container">
+        <h2 id="identity"></h2>
+        <h1>Interact with contract</h1>
+        <div class="select-box">
+            <div class="selected">Select function</div>
+            <div class="options-container">
+                <div class="option">
+                    <input type="radio" class="radio" id="set" name="category" />
+                    <label>Set</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="get" name="category" />
+                    <label>Get</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="compare" name="category" />
+                    <label>Compare</label>
+                </div>
+                <div class="option">
+                    <input type="radio" class="radio" id="remove" name="category" />
+                    <label>Remove</label>
+                </div>
+            </div>
+        </div>
+        <h2>Inputs</h2>
+        <div class="input-group">
+            <input type="text" class="input-area" required id="id"/>
+            <label for="id" class="label">ID</label>
+        </div>
+        <div class="input-group">
+            <input type="text" class="input-area" required id="hash" value="ba7816bf8f01cfeaa1414a0de5dae2223b00361a39617a9cb410ff61f2001a5d"/>
+            <label id="hashTitle" for="hash" class="label">Hash</label>
+        </div>
+        <button id="setButton" value=""><h3>Execute</h3></button>
+    </div>
+    <h1>Output</h1>
+    <div class="loader" style="display: none"></div>
+    <h5 id ="instructor"></h5>
+</div>
+
+<script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src ="index.js"></script>
+</body>
+</html>
